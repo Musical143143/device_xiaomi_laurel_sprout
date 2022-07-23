@@ -69,3 +69,6 @@ WITH_GMS := true
 # Quick tap
 TARGET_SUPPORTS_QUICK_TAP := true
 $(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
+
+# Inherit from custom vendor
+$(call inherit-product, vendor/miuicamera/config.mk)
