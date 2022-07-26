@@ -19,13 +19,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common CherishOs stuff
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common aospOs stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Cherish Official
-CHERISH_BUILD_TYPE := OFFICIAL
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=RAYAN(BASUBHAJANTRI)
 
 EXTRA_UDFPS_ANIMATIONS := true
 HAS_FOD := true
@@ -48,7 +44,7 @@ $(call inherit-product, $(LOCAL_PATH)/laurel_sprout.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := cherish_laurel_sprout
+PRODUCT_NAME := aosp_laurel_sprout
 PRODUCT_MODEL := Mi A3
 
 
@@ -72,3 +68,7 @@ $(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
 
 # Inherit from custom vendor
 $(call inherit-product, vendor/miuicamera/config.mk)
+
+#Official
+CUSTOM_BUILD_TYPE := OFFICIAL
+ETERNITY_NAINTAINER := BASUBHAJANTRI
