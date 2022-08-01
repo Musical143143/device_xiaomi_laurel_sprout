@@ -72,3 +72,7 @@ $(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
 
 # Inherit from custom vendor
 $(call inherit-product, vendor/miuicamera/config.mk)
+
+# Required variables for Pixel Launcher
+LAUNCHER_VARIANT := khonsu
+LAUNCHER_VARIANT := teamfilesicons
