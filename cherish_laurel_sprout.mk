@@ -75,4 +75,4 @@ $(call inherit-product, vendor/miuicamera/config.mk)
 
 # Required variables for Pixel Launcher
 LAUNCHER_VARIANT := khonsu
-LAUNCHER_VARIANT := teamfilesicons
+ICON_VARIANT := teamfilesicons
